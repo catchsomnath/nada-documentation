@@ -12,4 +12,5 @@ Installation guide
    folder-permissions
    configure-captcha
    configure-email
+   site-admin/tracking-traffic
 
