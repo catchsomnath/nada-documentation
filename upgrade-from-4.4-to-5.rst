@@ -1,7 +1,6 @@
-============
+===================================
 Upgrade from NADA 4.4 to NADA 5.0
-============
-
+===================================
 For users with an existing NADA 4.x catalog an upgrade script is included that will update your NADA 4.x database to NADA 5. The process will modify your current NADA database.  
 
 .. important::
@@ -15,13 +14,15 @@ For users with an existing NADA 4.x catalog an upgrade script is included that w
 
 4. Open the `database.php` and make sure the database debug mode is set to false:
 
-..code 
+.. code::
+
   $db['default']['db_debug'] = FALSE;
 
 
 5. Edit the configuration file **application/config/config.php** and enable `maintenance mode` by adding or enabling this line of code:
 
-.. code
+.. code::
+
   $config["maintenance_mode"]=1;
 
 
@@ -38,6 +39,8 @@ The line can be added anywhere in the `config.php` file.
 
 8. To verify the database upgrade. Open the NADA catalog page by going to http://[your-nada5-site]/index.php/catalog page and verify all studies from
 NADA 4 are listed.
+
+9. Edit `application/config/config.php` file and disable `maintenace mode` by setting the value for `$config["maintenance_mode"]` to 0.
 
 
 Linking data files
@@ -75,7 +78,7 @@ The upgrade script has only upgraded the database. It is now necessary to tell t
 
 
 Update study metadata
-----------------
+----------------------
 To update the metadata stored in the database for studies, metadata needs to be reloaded from the DDI files. The refresh DDI feature in NADA updates the database with metadata from the DDI without having re-uploading the DDIs. 
 To update the metadata for all studies in your catalog:
 
@@ -109,6 +112,5 @@ In NADA 5, website templates have been rewritten using Bootstrap 4. You will not
 
 *	Save the file.
 
-..note:
-
-See the Bootstrap 4 website for usage and styling - https://getbootstrap.com/ 	
+.. note::
+ See the Bootstrap 4 website for usage and styling - https://getbootstrap.com/ 	
