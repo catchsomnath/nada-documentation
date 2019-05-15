@@ -5,7 +5,6 @@ Installation guide
 .. toctree::
    :maxdepth: 2
    
-   requirements
    installation
    sqlsrv-install
    php-settings
