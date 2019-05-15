@@ -6,7 +6,6 @@ User manual
    :maxdepth: 2
    
    nada-overview
-   site-admin/tracking-traffic
    site-admin/dashboard
    site-admin/collections
    site-admin/manage-studies
