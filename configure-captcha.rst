@@ -1,34 +1,53 @@
-============
 Configure Captcha
-============
+########################
 
-By default NADA version 4.1 comes with image captcha and user does not need to make any changes to use image captcha. To use Google Captcha please follow the steps given below:
+NADA includes a built-in image captcha and also the Google Recaptcha v2. 
 
-A.	Open application/config/captcha.php in editor 
+Using builtin Image Captcha
+------------------------------
 
-B.	Change line number 12 as shown in below image
+1. Edit the configuration file **application/config/captcha.php**.
 
-.. image:: images/captcha_options.png
+2. Change the config option on **line 12** to **image_captcha**.
 
-C.	Click on above URL to generate Public and Private key URL: http://www.google.com/recaptcha/whyrecaptcha
+    .. image:: images/captcha_options.png
 
-D.	Click on sign up now 
+3. Save the file.
 
-E.	Sign in using your Gmail account
+4. To test, go to the login page and click on the **Register** link and you should see the Recaptcha visible at the bottom of the User Registration form.
 
-F.	After signed in you will have to enter your URL (Domain URL)
 
-.. image:: images/create_google_captcha.png
+Using Google Recpatcha v2
+------------------------------
+
+To use Google Captcha please follow the steps given below:
+
+1. To use the Google Recaptcha, you'll need to generate the public/private keys using the google recaptcha website. 
+
+2. Visit the Google Recaptcha website - https://www.google.com/recaptcha
+
+3. Login to the website, or sign up. 
+
+4. Once you have logged in, go to the Admin console to **Register a new site** or visit https://www.google.com/recaptcha/admin/create
+
+    .. image:: images/create_google_captcha.png
+
+    a. Provide a Label.
+
+    b. for ReCaptcha type, choose **reCaptcha v2** > **"I'm not a robot" Checkbox** option. 
+
+    c. Submit the form, which will open a confirmation page with the **Site Key** and **Secret Key**. We will need the keys to be added to the NADA configurations for ReCaptcha.
+    
  
-G.	Click on “enable globel key for all domain
+5. Edit the NADA configuration file **application/config/captcha.php**.
 
-H.	Click on Create Key button
+6. Change the config option on line 12 to **recaptcha**.
 
-I.	Copy public key and private key from Google Captcha website and inserte it on line number 51 and 52 respectively as shown in below image
+7. Copy **Site key** and **Secret key** from Google ReCaptcha page and inserte it on line number 51 and 52 respectively as shown in below image
 
-.. image:: images/pp_key.png
+    .. image:: images/pp_key.png
  
-J.	To check the Google catpcha configuration go to register page and look for image as shown in below URL highlighted in Red suqare
+J. To verify Recpatcha, visit the user registration page in NADA and verify that you can see the reCaptcha similar to the screenshot below.
 
-.. image:: images/varify_captcha.png
+    .. image:: images/varify_captcha.png
 

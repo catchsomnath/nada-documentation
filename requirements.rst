@@ -1,18 +1,20 @@
 Requirements
 ###############
 
-NADA requires PHP and a MySQL database at minimum. 
+NADA requires PHP, a MySQL database and a web server. 
 
 
 PHP requirements
 --------------------
 
-The minimum required version is PHP 5.2 but we strongly recommend that you use PHP 5.3 or 5.4. The following PHP extensions are required for NADA:
+The minimum required version is PHP 7 with the following PHP extensions enabled:
 
 * xsl
 * xml
 * mbstring
-* mysql or sqlsrv
+* mysql 
+
+For Microsoft SQL Server, you'll need **sqlsrv** extension for PHP.
 
 .. note:: 
 
@@ -20,9 +22,10 @@ The minimum required version is PHP 5.2 but we strongly recommend that you use P
 
 
 Web Server requirements
----------------------
-* Apache 2.x 
-* IIS 6/7.x 
+--------------------------
+* Apache 2.4 or later
+* IIS 6/7.x or later
+* NGINX 
 
 
 
@@ -31,4 +34,4 @@ Supported Databases
 * MySQL 5.x
 * Microsoft SQL Server with fulltext support
 
-
+For MySQL, NADA supports version below 5.6 (no longer supported by MySQL community) but for better performance use the latest 5.7 or MySQL 8.
