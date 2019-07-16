@@ -1,7 +1,7 @@
 ===================================
 Upgrade from NADA 4.4 to NADA 5.0
 ===================================
-For users with an existing NADA 4.x catalog an upgrade script is included that will update your NADA 4.x database to NADA 5. The process will modify your current NADA database.  
+For users with an existing NADA 4.x catalog an upgrade script is included that will update your NADA 4.x database to NADA 5. The process will modify your current NADA database.  Please make sure you are running on PHP 7, see section `installation guide` for NADA 5 requirements.
 
 .. important::
 	Backup your NADA database before doing anything!!
@@ -12,14 +12,22 @@ For users with an existing NADA 4.x catalog an upgrade script is included that w
 
 3. Copy  **application/config/database.php** file from your existing NADA and place it in the new NADA folder **application/config**.
 
-4. Open the `database.php` and make sure the database debug mode is set to false:
+4. Open the **database.php** and make sure the database debug mode is set to false:
 
 .. code::
 
   $db['default']['db_debug'] = FALSE;
 
 
-5. Edit the configuration file **application/config/config.php** and enable `maintenance mode` by adding or enabling this line of code:
+5. Change the database drivers to **mysqli**:
+
+.. code::
+
+  $db['default']['dbdriver'] = "mysqli";
+
+
+
+6. Edit the configuration file **application/config/config.php** and enable `maintenance mode` by adding or enabling this line of code:
 
 .. code::
 
@@ -33,14 +41,14 @@ The line can be added anywhere in the `config.php` file.
 
 .. warning:: This step makes changes to your NADA database that are not undo-able so make sure you do make a database backup before this step.
 
-6. Navigate to the URL for the NADA5 website: Example: http://your-nada5-site/index.php/nada5_upgrade/run
+7. Navigate to the URL for the NADA5 website: Example: http://your-nada5-site/index.php/nada5_upgrade/run
 
-7. The upgrade will update database tables and indexes. For any failed updates, it will show the SQL queries and the error messages. You will need to run the failed queries on your database directly to finish the upgrade. 
+8. The upgrade will update database tables and indexes. For any failed updates, it will show the SQL queries and the error messages. You will need to run the failed queries on your database directly to finish the upgrade. 
 
-8. To verify the database upgrade. Open the NADA catalog page by going to http://[your-nada5-site]/index.php/catalog page and verify all studies from
+9. To verify the database upgrade. Open the NADA catalog page by going to http://[your-nada5-site]/index.php/catalog page and verify all studies from
 NADA 4 are listed.
 
-9. Edit `application/config/config.php` file and disable `maintenace mode` by setting the value for `$config["maintenance_mode"]` to 0.
+10. Edit `application/config/config.php` file and disable `maintenace mode` by setting the value for `$config["maintenance_mode"]` to 0.
 
 
 Linking data files
