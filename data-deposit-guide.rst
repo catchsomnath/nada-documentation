@@ -27,9 +27,8 @@ This is the part of the application that is used by the depositors to deposit me
 
 
 A data deposit project is composed of:
-
 * Project information
-* Detailed project description based on the DDI fields. The form includes over 50+ fields. However, there are only 3 require fields that the user must fill, rest are optional
+* Detailed project description based on the DDI fields. The form includes over 50+ fields. However, there are only 3 required fields that the user must fill, the rest are optional. The form allows the user to change the form settings to display all, recommended or mandatory fields.
 * File uploads - for uploading data files, questionnaires, reports and any other documentation
 * Citations
 * Data classification
@@ -40,7 +39,12 @@ A data deposit project is composed of:
 
 Once a project is submitted, it is locked for any further changes. The system emails receipt of the data deposit to the depositor and the site administrators recieve notification of a new deposit.
 
+The application also allows users to:
 
+* Specify collaborators who can access, edit the deposit project and receive updates about it
+* Copy information from existing projects to new projects
+* Generate ddi, rdf, print preview and email email project content for review
+* Monitor the deposit from submission to publication
 
 Data Deposit Site Admin (backend)
 ===================================
