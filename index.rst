@@ -20,6 +20,7 @@ Documentation topics:
    installation-guide
    upgrade-guide
    user-manual
+   data-deposit
    
    
 
