@@ -1,5 +1,0 @@
-============
-Backup MySQL database
-============
-
-TODO

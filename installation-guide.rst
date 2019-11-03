@@ -6,6 +6,7 @@ Installation guide
    :maxdepth: 2
    
    installation
+   installation-iis
    sqlsrv-install
    php-settings
    folder-permissions

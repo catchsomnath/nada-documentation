@@ -1,5 +1,0 @@
-============
-Configure folder permissions
-============
-
-TODO

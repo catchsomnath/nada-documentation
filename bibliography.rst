@@ -1,5 +1,0 @@
-============
-citations/Bibliography
-============
-
-TODO

@@ -1,35 +1,24 @@
-================
-Adding Bulk Collection in NADA 4.2
-================
+====================================
+Bulk Data Access by Collections
+====================================
 
-Follow the following steps to add new bulk collection:
+The data access collections allow users to request access to multiple studies by filling in a single request form instead of submitting a new request for each study in the catalog.
 
-A.	Login to NADA 4.2 as administrator
-B.	Go to Studies  - Bulk Access Collection
-C.	Click on “Create new collection”
+To get started, first login as 'Administrator' and then from the admin menu navigate to `Studies` > `Bulk Access Collection`.
 
-.. image:: images/create_bulk_collection.png
+.. image:: images/da-collections.png
+	:class: img-responsive
 
-D.	Add title and description for your new bulk collection shown as below
 
-.. image:: images/add_collection.png
+Create new collection
+------------------------
 
-E.	Click on update
+1. To create a new collection, use the link on the page to open the form. Fill in the Title and Description fields and Save.
+2. Next, you'll need to add studies to the collection. Click on the link 'Attach studies' and then select the studies that you want to have in the collection.
 
-F.	You will find below screen after creating new bulk collection
 
-.. image:: images/attach-studies-bulk.png
+Test request form
+-------------------
 
-G.	Click on “Attach Studies”
-
-.. note::		
-	You can only attached studies having “License Data Access” type. Please make sure that study must be belongs to at least one collection
-
-H.	Click on attached button for the studies you want to attach to this collection as shown as below:
- 
-.. image:: images/attach_bulk_collection.png
-
-I. User will be able to request multiple survey datasets with single request
-
-.. image:: images/bulk_user_screen.png
+The users will see the option to request bulk access to all studies in the collection or a single study whenever they visit the licenced request form for any of the studies in the collection.
 

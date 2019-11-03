@@ -1,5 +1,0 @@
-============
-Configure HTACCESS
-============
-
-TODO

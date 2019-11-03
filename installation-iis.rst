@@ -1,11 +1,11 @@
-==========
-NADA Installation and Configurations for IIS
-==========
+===============================================
+Installation using Internet Information Services (IIS)
+===============================================
 
 This document covers the steps to install NADA on IIS 7/8 and using the rewrite module to secure access to NADA files and folders.
 
 Microsoft SQL Server Client
------------
+---------------------------------
 
 This is only needed if you want to use Microsoft SQL Server with NADA. If you are using MySQL then you can skip this step.
 
@@ -24,7 +24,7 @@ Audience(s): **Customer, Partner, Developer**
 **IA64 Package** (sqlncli.msi)
 
 Install PHP Manager for IIS 7/8
--------------
+---------------------------------
 
 The PHP manager makes it easy to install and configure PHP on IIS and you can configure various versions of PHP on your server and control which version of PHP to use for each web application.
 Download and Install from here: http://phpmanager.codeplex.com/releases/view/69115
@@ -35,7 +35,7 @@ The direct link to download the manager for 64bit windows is: http://phpmanager.
 .. image:: images/php-manager.png
 
 Installing PHP 5.3/5.4/5.5
----------------
+---------------------------------
 
 1.	Download PHP 5.3 or later from here: http://windows.php.net/download/. 
 2.	Make sure you download  Non-Thread-Safe version if you are planning on using the Microsoft SQL Server Database.
@@ -67,7 +67,7 @@ Installing PHP 5.3/5.4/5.5
 13.	To change PHP settings such as file upload size and etc, use the link “Manage all settings” and update values as needed.
 
 Install PHP SQLSRV drivers/extension
----------------------------
+--------------------------------------
 
 This is needed for PHP to connect to Microsoft SQL Server. The drivers can be downloaded from here: http://www.microsoft.com/en-us/download/details.aspx?id=20098
 
@@ -96,7 +96,7 @@ From command line run: php -m
 .. image:: images/php-m.png
 
 Install IIS URL rewrite extension
--------------
+-----------------------------------
 
 Please download from here and install: http://www.iis.net/downloads/microsoft/url-rewrite
 
