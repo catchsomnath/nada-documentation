@@ -5,7 +5,7 @@ NADA Translation Guide
 NADA includes a web based translation tool for updating the site’s language or creating new languages for your NADA sites. To start, you will need an admin account to manage translations.
 
 A. Set language folder permissions:  Before you can translate, you must set the language folder to have READ/WRITE permissions. The language folder is located at: [your-nada]/application/language
-B. Go to [your-nada-site]/index.php/translate. If you are not already logged in to your NADA site, you will be asked to login.
+B. Go to [your-nada-site]/index.php/admin/translate. If you are not already logged in to your NADA site, you will be asked to login.
 
 .. image:: images/ts_login.png
 
